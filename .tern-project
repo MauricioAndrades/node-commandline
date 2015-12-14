@@ -1,0 +1,22 @@
+{
+  "ecmaVersion": 6,
+  "libs": [
+    "browser",
+    "jquery"
+  ],
+  "dontLoad": [
+    "absolute/or/relative/path/to/your/js/**/*.js"
+  ],
+  "plugins": {
+    "node": {},
+    "node-express": {},
+    "complete_strings": {},
+    "lint": {},
+    "angular": {},
+    "modules": {},
+    "es_modules": {},
+    "doc_comment": {
+      "fullDocs": true
+    }
+  }
+}

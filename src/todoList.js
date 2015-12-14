@@ -6,15 +6,18 @@ var fs = require('fs'); // builtin module, how do we know?
 */
 var TodoList = {
 
-  /**
-   * This function reads our todo list file, and if it's empty it initializes
-   * such a file with a todo object.
-   */
-  init: function(){
+    /**
+     * This function reads our todo list file, and if it's empty it initializes
+     * such a file with a todo object.
+     */
+    init: function() {
+        this.todoFilePath = createFilePathFor("myTodo.json");
 
-  },
-
+    },
 }
 
+function createFile(fileName){
+    var path = __dirname + '/' + fileName;
 
+}
 module.exports = TodoList;

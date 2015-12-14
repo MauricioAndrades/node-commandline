@@ -1,3 +1,6 @@
+# Resources:
+https://github.com/gSchool/node-fs-todo-cli-example/tree/class-assignment
+
 # Node File IO Example: Creating A To Do List
 
 In this example, we're creating a to-do list app that will work in the command line. In the basic version we only want to maintain one todo list. We must be able to:

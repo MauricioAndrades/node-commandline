@@ -1,5 +1,6 @@
 var prompt = require('prompt');       // npm module, how do we know?
 var TodoList = require('./todoList'); // file module, how do we know?
+var fs = require('fs');
 
 // initializes todo list file
 TodoList.init()
@@ -21,9 +22,12 @@ homePrompt();
 // run a function in the runOption object based on what number the user enters
 runOption = {
 
-  addItem: function(){
+  addItem: function(err, contents){
     // show any tasks that exist
-
+    if(err) throw err;
+    var contents = fs.readFileSync("../todo-lists/myTodo.json");
+    var JSONcontent = JSON.parse(contents);
+    console.log(contents);
     // Get user input for task description
 
     // Run a method on TodoList that adds a task
