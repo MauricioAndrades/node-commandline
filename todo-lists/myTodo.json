@@ -1,4 +1,1 @@
-{
-    "name": "myTodo",
-    "tasks": []
-}
+{"name":"myTodo","tasks":[{"description":"it's my first test","completed":false},{"description":"1","completed":true}]}
